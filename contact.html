@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - AuRa LaNe</title>
+
+<style>
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #fddb92);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    transition: 0.4s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    box-shadow: 0 0 15px #fff;
+}
+
+/* ===== Main ===== */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 0 0 10px #fff;
+}
+
+/* ===== Contact Form ===== */
+form {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    color: black;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Contact Us</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="product.html">Products</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h2>Get in Touch</h2>
+
+<form action="#" method="post">
+<input type="text" name="name" placeholder="Your messege" required>
+<input type="email" name="email" placeholder="Your email adress" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</main>
+
+<footer>
+<p>&copy; 2026 AuRa LaNe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
